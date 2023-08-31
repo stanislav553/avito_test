@@ -1,0 +1,33 @@
+.header {
+  height: 50px;
+  box-shadow: 0 0 5px 0 #000;
+  margin-bottom: 10px;
+
+  &_content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+  }
+
+  &_buttons {
+    font-size: 25px;
+    color: #aaaaaa;
+    transition: transform 0.5s;
+  }
+  &_buttons:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+  }
+}
+@media (max-width: 800px) {
+  .header {
+    height: 40px;
+    &_buttons {
+      font-size: 20px;
+    }
+  }
+}

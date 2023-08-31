@@ -1,0 +1,172 @@
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.game_inner {
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.game_title {
+  width: 100%;
+  color: #aaaaaa;
+}
+
+.game_minimal_system_requirements {
+  width: 100%;
+  color: #aaaaaa;
+  font-size: 20px;
+}
+
+.game_system_requirements {
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game_screenshots_span {
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+
+.game_screenshots_content {
+  display: flex;
+  align-items: center;
+}
+
+.game_arrow_slider {
+  transform: scale(1.5);
+}
+
+.arrow_back {
+  transform: scale(1.5);
+  color: #fff;
+}
+
+.game_poster {
+  height: 220px;
+  margin-right: 20px;
+}
+
+.game_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.game_details {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 0 0 40px;
+}
+
+.game_screenshot {
+  height: 200px;
+}
+
+.game_content {
+  display: flex;
+  padding: 0 0 0 40px;
+}
+
+@media (max-width: 800px) {
+  .game_inner {
+    gap: 15px;
+  }
+
+  .game_poster {
+    max-width: 265px;
+    max-height: 145px;
+  }
+
+  .game_minimal_system_requirements {
+    font-size: 16px;
+    color: #dbdbdb;
+  }
+
+  .game_system_requirements {
+    color: #bebcbc;
+    font-size: 13px;
+    max-width: 300px;
+  }
+
+  .game_title {
+    transform: scale(0.9);
+  }
+
+  .game_details {
+    font-size: 13px;
+  }
+
+  .game_screenshots_span {
+    font-size: 16px;
+  }
+
+  .game_screenshot {
+    height: 150px;
+  }
+
+  .arrow_back {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 650px) {
+  .game_inner {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .game_poster {
+    margin-bottom: 10px;
+  }
+
+  .game_title {
+    transform: scale(0.7);
+    text-align: center;
+  }
+
+  .game_content {
+    flex-direction: column;
+  }
+
+  .game_screenshots {
+    max-width: 340px;
+  }
+
+  .game_details {
+    text-align: center;
+    padding: 0;
+  }
+
+  .arrow_back {
+    position: relative;
+    right: 134px;
+  }
+
+  .game_minimal_system_requirements {
+    font-size: 15px;
+  }
+
+  .game_system_requirements {
+    font-size: 12px;
+    max-width: 266px;
+  }
+}

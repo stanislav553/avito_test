@@ -1,0 +1,47 @@
+.game_cards {
+  background-color: #323832;
+}
+
+.game_card_details {
+  display: block;
+  color: #7a8288;
+}
+
+.game_card_content {
+  background-color: #32383e;
+  color: #aaaaaa;
+}
+
+.game_card_title {
+  transform: scale(1);
+}
+
+@media (max-width: 1120px) {
+  .game_card_title {
+    transform: scale(0.9);
+    position: relative;
+    right: 13px;
+  }
+}
+
+@media (max-width: 860px) {
+  .game_card_title {
+    transform: scale(0.9);
+    margin-bottom: 0;
+  }
+
+  .game_card_details {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 680px) {
+  .game_card_title {
+    transform: scale(0.7);
+    right: 23px;
+  }
+
+  .game_card_details {
+    font-size: 13px;
+  }
+}
